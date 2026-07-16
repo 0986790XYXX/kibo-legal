@@ -14,26 +14,27 @@
 <h1>Privacy Policy</h1>
 <p class="muted">Last updated: 2026-07-14 · App: Kibo — Custom Keyboard for iPhone (com.douchaojun.kibo)</p>
 
-<p>Kibo (“the App”, “we”) is a custom keyboard for iPhone. We designed Kibo so that privacy is enforced by the system, not just promised in a document. This policy explains exactly what the App does and does not do with your information. By using the App you agree to this policy.</p>
+<p>Kibo (“the App”, “we”) is a custom keyboard for iPhone. We built Kibo to respect your privacy: we do not collect any data, we have no servers, no accounts, and no analytics. This policy explains exactly what the App does and does not do with your information. By using the App you agree to this policy.</p>
 
-<h2>1. The Kibo keyboard does not have Full Access</h2>
-<p>Kibo’s keyboard extension is built with <b>Full Access disabled</b> (<code>RequestsOpenAccess = false</code>). We never ask you to enable Full Access.</p>
-<p>Because Full Access is not requested, iOS prevents the keyboard from communicating over the network at all. The keyboard extension <b>has no network access capability</b>. It cannot send anything, anywhere, to us or to anyone else.</p>
+<h2>1. Full Access is optional and off by default</h2>
+<p>Kibo’s keyboard extension declares <code>RequestsOpenAccess = true</code>, so iOS shows an <b>“Allow Full Access”</b> switch for Kibo. This switch is <b>turned off by default</b>. You only enable it if you choose to, in Settings → General → Keyboard → Keyboards → Kibo.</p>
+<p><b>When Full Access is OFF</b> (the default), iOS prevents the keyboard from accessing the network or the system clipboard. Only the copy/paste feature is unavailable; everything else — typing, themes, sound effects, light effects, emoji, moving the cursor, and deleting words — works normally.</p>
+<p><b>When Full Access is ON</b>, iOS allows the keyboard to read and write the system clipboard. Kibo uses this capability <b>only</b> for the copy-word, copy-line, and paste buttons in its toolbar. Even with Full Access enabled, Kibo still does <b>not</b> collect, log, or transmit anything you type, and Kibo has no servers to send anything to.</p>
 
 <h2>2. We do not collect your keystrokes</h2>
 <ul>
-  <li>We do <b>not</b> collect, log, store, or transmit anything you type — no characters, words, sentences, passwords, messages, or clipboard contents.</li>
+  <li>We do <b>not</b> collect, log, store, or transmit anything you type — no characters, words, sentences, passwords, or messages. This is true whether Full Access is on or off.</li>
   <li>Everything you type is passed directly to the app you are typing into, exactly as iOS intends. Nothing is retained by Kibo.</li>
   <li>We do <b>not</b> build any profile, typing history, or dictionary from your input.</li>
+  <li>If you enable Full Access and use the copy/paste buttons, clipboard contents are handled only on your device to perform that action. Kibo does not store, log, or transmit your clipboard.</li>
 </ul>
 
 <h2>3. The only data Kibo stores</h2>
 <p>The App stores a small amount of preference data so the keyboard behaves the way you configured it. This is the complete list:</p>
 <ul>
   <li>The <b>theme ID</b> you selected.</li>
-  <li>Your <b>sound effect</b> on/off setting.</li>
-  <li>Your <b>haptic feedback</b> on/off setting.</li>
-  <li>Your <b>auto-capitalization</b> on/off setting.</li>
+  <li>Your <b>sound effect, light effect, and haptic feedback</b> on/off settings.</li>
+  <li>Your <b>auto-capitalization</b> and <b>number row</b> on/off settings.</li>
   <li>Your <b>recently used emoji</b>, so the emoji panel can show them first.</li>
 </ul>
 <p>All of this is stored locally on your device inside a shared App Group container belonging to Kibo. <b>It never leaves your device.</b> It is not uploaded, not backed up to our servers (we have no servers for it), and not shared with anyone.</p>
@@ -61,12 +62,12 @@
 <p>Kibo does not knowingly collect any information from children, and in fact collects no personal information from any user regardless of age.</p>
 
 <h2>9. Changes to this policy</h2>
-<p>We may update this policy from time to time. If the App’s behavior ever changes — for example, if a future feature would require network access — we will update this page <b>before</b> that change ships, and the “Last updated” date above will reflect it.</p>
+<p>We may update this policy from time to time. If the App’s behavior ever changes — for example, if a future feature would collect or transmit data — we will update this page <b>before</b> that change ships, and the “Last updated” date above will reflect it.</p>
 
 <h2>10. Contact us</h2>
 <p>For any privacy question, contact: <a href="mailto:support@douhouse.com">support@douhouse.com</a></p>
 
 <hr>
-<p class="muted">Summary: Kibo’s keyboard runs without Full Access and therefore has no network access. It does not collect, store, or transmit anything you type. The only data stored is your theme, sound/haptics/auto-capitalization settings, and recently used emoji — kept locally on your device and never sent anywhere. No analytics, no ads, no accounts. Deleting the app deletes everything. Contact: support@douhouse.com</p>
+<p class="muted">Summary: Kibo offers an optional Full Access switch (off by default) used only for clipboard copy/paste. Whether it is on or off, Kibo does not collect, store, or transmit anything you type, and has no servers. The only data stored is your theme, sound/light/haptics/auto-capitalization/number-row settings, and recently used emoji — kept locally on your device and never sent anywhere. No analytics, no ads, no accounts. Deleting the app deletes everything. Contact: support@douhouse.com</p>
 </body>
 </html>
