@@ -12,7 +12,7 @@
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p class="muted">Last updated: 2026-07-14 · App: Kibo — Custom Keyboard for iPhone (com.douchaojun.kibo)</p>
+<p class="muted">Last updated: 2026-07-26 · App: Kibo — Custom Keyboard for iPhone (com.douchaojun.kibo)</p>
 
 <p>Kibo (“the App”, “we”) is a custom keyboard for iPhone. We built Kibo to respect your privacy: we do not collect any data, we have no servers, no accounts, and no analytics. This policy explains exactly what the App does and does not do with your information. By using the App you agree to this policy.</p>
 
@@ -36,10 +36,26 @@
   <li>Your <b>sound effect, light effect, and haptic feedback</b> on/off settings.</li>
   <li>Your <b>auto-capitalization</b> and <b>number row</b> on/off settings.</li>
   <li>Your <b>recently used emoji</b>, so the emoji panel can show them first.</li>
+  <li>Your <b>key transparency</b> level and your <b>shuffle</b> on/off switches.</li>
+  <li>Any <b>saved phrases</b> you create — ordinary reusable text such as a reply template, an address, or an email signature. You write these yourself; Kibo never generates them from what you type.</li>
+  <li>A flag recording whether <b>Kibo Pro</b> has been purchased.</li>
 </ul>
 <p>All of this is stored locally on your device inside a shared App Group container belonging to Kibo. <b>It never leaves your device.</b> It is not uploaded, not backed up to our servers (we have no servers for it), and not shared with anyone.</p>
+<p><b>Secure entries are not stored here.</b> They are handled differently and more strictly — see Section 4.</p>
 
-<h2>4. No analytics, no advertising, no tracking</h2>
+<h2>4. Secure entries (ID numbers, cards, passports)</h2>
+<p>Kibo Pro lets you save values such as an ID number, a bank card number or a passport number so you can insert them without retyping. Because these are sensitive, they are handled differently from everything else in this policy:</p>
+<ul>
+  <li>They are stored in the <b>iOS Keychain</b>, encrypted by the operating system. They are <b>not</b> stored in the App Group container described in Section 3, and <b>not</b> in any ordinary preferences file.</li>
+  <li>Each entry is saved with iOS's <b>user-presence</b> protection. Reading the value requires <b>Face ID, Touch ID, or your device passcode</b>, every time — whether it is being inserted into an app or revealed inside Kibo itself. This requirement is <b>enforced by iOS</b>, not by Kibo's own code.</li>
+  <li>They are saved as <b>“this device only.”</b> They are never synced to iCloud Keychain and never restored onto a different device from a backup.</li>
+  <li>Lists in the app and in the keyboard show only the <b>last four characters</b>. The full value is never displayed on screen — it goes from the Keychain directly into the app you are typing into.</li>
+  <li><b>We cannot read them.</b> We have no servers and the App makes no network requests; there is nowhere for a secure entry to go, and no mechanism by which we could retrieve one.</li>
+  <li>Deleting an entry removes both its Keychain value and its record. <b>Deleting the Kibo app removes all of them.</b></li>
+</ul>
+<p>You choose whether to use this feature at all. Kibo works fully without it.</p>
+
+<h2>5. No analytics, no advertising, no tracking</h2>
 <ul>
   <li>Kibo contains <b>no third-party analytics SDKs</b>.</li>
   <li>Kibo contains <b>no advertising SDKs</b> and shows no ads.</li>
@@ -47,27 +63,32 @@
   <li>We do not collect device identifiers, location, contacts, or any personally identifiable information.</li>
 </ul>
 
-<h2>5. Accounts</h2>
+<h2>6. Accounts</h2>
 <p>Kibo has <b>no user accounts</b>. There is no sign-up, no sign-in, no email address, and no profile.</p>
 
-<h2>6. No purchases</h2>
-<p>Kibo is <b>free</b> and contains <b>no in-app purchases and no subscriptions</b>. We do not process, receive, or store any payment information.</p>
+<h2>7. Purchases</h2>
+<p>Kibo is free to download. It offers a single <b>one-time in-app purchase</b>, “Kibo Pro”, which unlocks the full set of themes, sounds, lighting effects and the features described above. There is <b>no subscription</b>.</p>
+<ul>
+  <li>The purchase is processed entirely by <b>Apple</b> through the App Store. <b>We never receive, process, or store any payment information</b> — no card number, no billing address, no name.</li>
+  <li>Kibo does not know who you are. Whether Pro is unlocked is recorded as a simple flag on your own device.</li>
+  <li>Restoring a purchase is handled by Apple against your Apple Account. No account is created with us, because we have none.</li>
+</ul>
 
-<h2>7. Account Deletion</h2>
+<h2>8. Account Deletion</h2>
 <p>Kibo has no accounts and collects no personal data, so there is no account to delete and no server-side data to erase.</p>
-<p>The only data that exists is the small set of local preferences listed in Section 3, stored on your own device. <b>Deleting the Kibo app from your iPhone permanently deletes all of that data.</b> Nothing remains with us, because nothing was ever sent to us.</p>
+<p>The only data that exists is the local preferences listed in Section 3 and any secure entries described in Section 4, all stored on your own device. <b>Deleting the Kibo app from your iPhone permanently deletes all of that data.</b> Nothing remains with us, because nothing was ever sent to us.</p>
 <p>If you have any question about deletion, contact <a href="mailto:support@douhouse.com">support@douhouse.com</a>.</p>
 
-<h2>8. Children’s privacy</h2>
+<h2>9. Children’s privacy</h2>
 <p>Kibo does not knowingly collect any information from children, and in fact collects no personal information from any user regardless of age.</p>
 
-<h2>9. Changes to this policy</h2>
+<h2>10. Changes to this policy</h2>
 <p>We may update this policy from time to time. If the App’s behavior ever changes — for example, if a future feature would collect or transmit data — we will update this page <b>before</b> that change ships, and the “Last updated” date above will reflect it.</p>
 
-<h2>10. Contact us</h2>
+<h2>11. Contact us</h2>
 <p>For any privacy question, contact: <a href="mailto:support@douhouse.com">support@douhouse.com</a></p>
 
 <hr>
-<p class="muted">Summary: Kibo offers an optional Full Access switch (off by default) used only for clipboard copy/paste. Whether it is on or off, Kibo does not collect, store, or transmit anything you type, and has no servers. The only data stored is your theme, sound/light/haptics/auto-capitalization/number-row settings, and recently used emoji — kept locally on your device and never sent anywhere. No analytics, no ads, no accounts. Deleting the app deletes everything. Contact: support@douhouse.com</p>
+<p class="muted">Summary: Kibo offers an optional Full Access switch (off by default) used only for clipboard copy/paste. Whether it is on or off, Kibo does not collect, store, or transmit anything you type, and has no servers. What is stored stays on your device: your theme and keyboard settings, recently used emoji, phrases you write yourself, and — if you use the feature — secure entries kept in the iOS Keychain, protected by Face ID and never synced off the device. Kibo offers one optional one-time purchase, handled entirely by Apple; we never see payment information. No analytics, no ads, no accounts. Deleting the app deletes everything. Contact: support@douhouse.com</p>
 </body>
 </html>
