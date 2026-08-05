@@ -38,6 +38,8 @@
   <li>Your <b>recently used emoji</b>, so the emoji panel can show them first.</li>
   <li>Your <b>key transparency</b> level and your <b>shuffle</b> on/off switches.</li>
   <li>Any <b>saved phrases</b> you create — ordinary reusable text such as a reply template, an address, or an email signature. You write these yourself; Kibo never generates them from what you type.</li>
+  <li>Any <b>saved places</b> you create — a place you asked Kibo to remember, with the name and street address it was saved under, so the location key can insert it later. You choose when to save one; Kibo never records where you are on its own.</li>
+  <li>Your chosen <b>date format</b> and <b>location format</b>.</li>
   <li>A flag recording whether <b>Kibo Pro</b> has been purchased.</li>
 </ul>
 <p>All of this is stored locally on your device inside a shared App Group container belonging to Kibo. <b>It never leaves your device.</b> It is not uploaded, not backed up to our servers (we have no servers for it), and not shared with anyone.</p>
@@ -55,12 +57,24 @@
 </ul>
 <p>You choose whether to use this feature at all. Kibo works fully without it.</p>
 
+<h2>4a. Location</h2>
+<p>Kibo has a <b>location key</b> that inserts where you are into whatever you are typing — as coordinates, a street address, a city, or a link to a map. It exists so you can send someone your location without leaving the app you are writing in.</p>
+<ul>
+  <li><b>Your location is read only when you press that key</b>, or when you ask the App to save the place you are standing in. It is never read in the background, never read while you are simply typing, and never read while the keyboard is idle.</li>
+  <li><b>Your location is not uploaded to us.</b> We have no servers to send it to. It goes into your text, and — if you chose to save the place — into the local storage described in Section 3.</li>
+  <li><b>It is not stored otherwise, not logged, and not shared with anyone.</b> It is not used for advertising, profiling, or tracking, and it is not linked to your identity.</li>
+  <li>Turning a set of coordinates into a street address is done by <b>Apple’s geocoding service on iOS</b>, which is what performs that lookup for every app on the device. Kibo does not send your location to any other service.</li>
+  <li>The keyboard extension can only read your location while <b>Full Access</b> is enabled, because iOS gives an extension no location and no network without it. Saved places work either way.</li>
+  <li>You can refuse location access, or withdraw it at any time, in Settings → Privacy &amp; Security → Location Services → Kibo. The rest of the keyboard is unaffected.</li>
+</ul>
+
 <h2>5. No analytics, no advertising, no tracking</h2>
 <ul>
   <li>Kibo contains <b>no third-party analytics SDKs</b>.</li>
   <li>Kibo contains <b>no advertising SDKs</b> and shows no ads.</li>
   <li>We do <b>not</b> track you across apps or websites, and we do not sell or share data with data brokers.</li>
-  <li>We do not collect device identifiers, location, contacts, or any personally identifiable information.</li>
+  <li>We do not collect device identifiers, contacts, or any personally identifiable information.</li>
+  <li>We do not collect your location. Location is read only at the moment you press the location key, is placed into your own text, and is never transmitted to us — see Section 4a.</li>
 </ul>
 
 <h2>6. Accounts</h2>
